@@ -1,6 +1,6 @@
 ﻿namespace Vedrid;
 
-public class WeatherForecastResponse
+public record WeatherForecastResponse
 {
 
 }

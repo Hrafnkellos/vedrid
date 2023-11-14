@@ -1,17 +1,32 @@
-using Microsoft.AspNetCore.Mvc;
 using Vedrid;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddEndpointsApiExplorer();     
+builder.Services.AddSwaggerGen(x =>
+{
+  x.EnableAnnotations();
+});
+
 var app = builder.Build();
 
-app.MapGet("/", () => Results.Ok());
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-app.MapGet("/echo", (string echo) => echo);
+app.MapGet("/", () => Results.Redirect("/swagger")).ExcludeFromDescription();
 
-app.MapGet("/forecasts", async ([FromQuery] ForecastRequest forecastRequest, CancellationToken token) => 
+app.MapGet("/echo", (string echo) => echo).WithTags("System");
+
+app.MapGet("/healthcheck", (string echo) => echo).WithTags("System");
+
+app.MapGet("/forecasts", async ([AsParameters] ForecastRequest forecastRequest, CancellationToken token) => 
 {
     return Results.Ok();
-});
+})
+.WithTags("Forecasts");
 
 
 app.Run();

@@ -11,10 +11,11 @@ This app is only designed for the all green path and is not handling errors that
 * * [ ] Configuration
 * * [ ] Project Structure
 * * [ ] External Resources
-* * [ ] editorconfig
-* * [ ] gitignore
 * [X] Setup Project boilerplate + repository
-* [ ] DockerFile
+* * [x] editorconfig
+* * [x] gitignore
+* * [x] swagger
+* * [ ] DockerFile
 * [X] Research integration endpoint and create a design
 * [ ] Implement Resource
 * [ ] Implement Service layer
