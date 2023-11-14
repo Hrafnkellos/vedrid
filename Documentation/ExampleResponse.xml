@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forecasts>
+  <station id="1"  valid="1">
+    <name>Reykjavík</name>
+    <atime>2023-11-14 12:00:00</atime>
+    <err></err>
+    <link>
+      <![CDATA[http://www.vedur.is/vedur/spar/stadaspar/hofudborgarsvaedid/#group=100&station=1]]>
+    </link>
+    <forecast>
+      <ftime>2023-11-14 13:00:00</ftime>
+      <F>7</F>
+      <D>ASA</D>
+      <T>6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 14:00:00</ftime>
+      <F>7</F>
+      <D>ASA</D>
+      <T>6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 15:00:00</ftime>
+      <F>6</F>
+      <D>ASA</D>
+      <T>6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 16:00:00</ftime>
+      <F>7</F>
+      <D>ASA</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 17:00:00</ftime>
+      <F>8</F>
+      <D>ASA</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 18:00:00</ftime>
+      <F>7</F>
+      <D>ASA</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 19:00:00</ftime>
+      <F>6</F>
+      <D>ASA</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 20:00:00</ftime>
+      <F>5</F>
+      <D>ASA</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 21:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 22:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 23:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 00:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 01:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 02:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 03:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 04:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 05:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 06:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 07:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 08:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 09:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 10:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 11:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 12:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 13:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 14:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 15:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 16:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 17:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 18:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 19:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 20:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 21:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 22:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 23:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 00:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 01:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 02:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 03:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 04:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 05:00:00</ftime>
+      <F>7</F>
+      <D>A</D>
+      <T>6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 06:00:00</ftime>
+      <F>7</F>
+      <D>A</D>
+      <T>6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 07:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 08:00:00</ftime>
+      <F>3</F>
+      <D>ANA</D>
+      <T>5</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 09:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 10:00:00</ftime>
+      <F>3</F>
+      <D>ASA</D>
+      <T>5</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 11:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 12:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 13:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>6</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 14:00:00</ftime>
+      <F>3</F>
+      <D>A</D>
+      <T>6</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 15:00:00</ftime>
+      <F>4</F>
+      <D>ASA</D>
+      <T>6</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 16:00:00</ftime>
+      <F>4</F>
+      <D>ASA</D>
+      <T>5</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 17:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 18:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 19:00:00</ftime>
+      <F>3</F>
+      <D>ASA</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 20:00:00</ftime>
+      <F>3</F>
+      <D>ASA</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 21:00:00</ftime>
+      <F>3</F>
+      <D>ASA</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 22:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 23:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 00:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 01:00:00</ftime>
+      <F>3</F>
+      <D>A</D>
+      <T>4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 02:00:00</ftime>
+      <F>2</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 03:00:00</ftime>
+      <F>2</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 04:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 05:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 06:00:00</ftime>
+      <F>2</F>
+      <D>SSA</D>
+      <T>3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 09:00:00</ftime>
+      <F>2</F>
+      <D>ASA</D>
+      <T>0</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 12:00:00</ftime>
+      <F>1</F>
+      <D>ASA</D>
+      <T>1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 15:00:00</ftime>
+      <F>1</F>
+      <D>ASA</D>
+      <T>2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 18:00:00</ftime>
+      <F>1</F>
+      <D>ASA</D>
+      <T>1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 21:00:00</ftime>
+      <F>2</F>
+      <D>A</D>
+      <T>0</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 00:00:00</ftime>
+      <F>2</F>
+      <D>A</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 03:00:00</ftime>
+      <F>3</F>
+      <D>A</D>
+      <T>0</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 06:00:00</ftime>
+      <F>5</F>
+      <D>A</D>
+      <T>1</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 09:00:00</ftime>
+      <F>6</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 12:00:00</ftime>
+      <F>4</F>
+      <D>A</D>
+      <T>3</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 15:00:00</ftime>
+      <F>2</F>
+      <D>A</D>
+      <T>2</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 18:00:00</ftime>
+      <F>1</F>
+      <D>SA</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 21:00:00</ftime>
+      <F>1</F>
+      <D>SA</D>
+      <T>1</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 00:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 03:00:00</ftime>
+      <F>1</F>
+      <D>ASA</D>
+      <T>2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 06:00:00</ftime>
+      <F>1</F>
+      <D>A</D>
+      <T>2</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 09:00:00</ftime>
+      <F>1</F>
+      <D>ASA</D>
+      <T>-1</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 12:00:00</ftime>
+      <F>1</F>
+      <D>ASA</D>
+      <T>0</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 15:00:00</ftime>
+      <F>1</F>
+      <D>SA</D>
+      <T>0</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 18:00:00</ftime>
+      <F>1</F>
+      <D>ASA</D>
+      <T>-1</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 21:00:00</ftime>
+      <F>1</F>
+      <D>SA</D>
+      <T>0</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-20 00:00:00</ftime>
+      <F>3</F>
+      <D>SA</D>
+      <T>0</T>
+      <W>Lítils háttar snjókoma</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-20 06:00:00</ftime>
+      <F>4</F>
+      <D>S</D>
+      <T>2</T>
+      <W>Lítils háttar rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-20 12:00:00</ftime>
+      <F>8</F>
+      <D>ASA</D>
+      <T>2</T>
+      <W>Rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-20 18:00:00</ftime>
+      <F>5</F>
+      <D>SSV</D>
+      <T>3</T>
+      <W>Rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-21 00:00:00</ftime>
+      <F>9</F>
+      <D>SA</D>
+      <T>5</T>
+      <W>Lítils háttar rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-21 06:00:00</ftime>
+      <F>10</F>
+      <D>SSA</D>
+      <T>8</T>
+      <W>Lítils háttar rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-21 12:00:00</ftime>
+      <F>11</F>
+      <D>SSV</D>
+      <T>8</T>
+      <W>Lítils háttar rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-21 18:00:00</ftime>
+      <F>17</F>
+      <D>SV</D>
+      <T>5</T>
+      <W>Skúrir</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-22 00:00:00</ftime>
+      <F>18</F>
+      <D>V</D>
+      <T>5</T>
+      <W>Rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-22 06:00:00</ftime>
+      <F>17</F>
+      <D>V</D>
+      <T>5</T>
+      <W>Rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-22 12:00:00</ftime>
+      <F>13</F>
+      <D>V</D>
+      <T>5</T>
+      <W>Skúrir</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-22 18:00:00</ftime>
+      <F>12</F>
+      <D>VSV</D>
+      <T>4</T>
+      <W>Skúrir</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-23 00:00:00</ftime>
+      <F>6</F>
+      <D>NV</D>
+      <T>3</T>
+      <W>Skúrir</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-23 06:00:00</ftime>
+      <F>6</F>
+      <D>N</D>
+      <T>-1</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-23 12:00:00</ftime>
+      <F>3</F>
+      <D>N</D>
+      <T>-2</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-23 18:00:00</ftime>
+      <F>12</F>
+      <D>NNV</D>
+      <T>-1</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-24 00:00:00</ftime>
+      <F>16</F>
+      <D>NNV</D>
+      <T>-1</T>
+      <W>Skýjað</W>
+    </forecast>
+  </station>
+  <station id="422"  valid="1">
+    <name>Akureyri</name>
+    <atime>2023-11-14 12:00:00</atime>
+    <err></err>
+    <link>
+      <![CDATA[http://www.vedur.is/vedur/spar/stadaspar/nordurland_eystra/#group=15&station=422]]>
+    </link>
+    <forecast>
+      <ftime>2023-11-14 13:00:00</ftime>
+      <F>3</F>
+      <D>SSA</D>
+      <T>2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 14:00:00</ftime>
+      <F>3</F>
+      <D>SSA</D>
+      <T>2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 15:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 16:00:00</ftime>
+      <F>4</F>
+      <D>SSA</D>
+      <T>1</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 17:00:00</ftime>
+      <F>4</F>
+      <D>SSA</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 18:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 19:00:00</ftime>
+      <F>4</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 20:00:00</ftime>
+      <F>4</F>
+      <D>SSV</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 21:00:00</ftime>
+      <F>3</F>
+      <D>SSA</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 22:00:00</ftime>
+      <F>2</F>
+      <D>SSA</D>
+      <T>-1</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-14 23:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>0</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 00:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 01:00:00</ftime>
+      <F>5</F>
+      <D>SSA</D>
+      <T>0</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 02:00:00</ftime>
+      <F>2</F>
+      <D>SSA</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 03:00:00</ftime>
+      <F>1</F>
+      <D>SV</D>
+      <T>-1</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 04:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 05:00:00</ftime>
+      <F>4</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 06:00:00</ftime>
+      <F>4</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 07:00:00</ftime>
+      <F>4</F>
+      <D>S</D>
+      <T>-1</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 08:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 09:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 10:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 11:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>1</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 12:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 13:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 14:00:00</ftime>
+      <F>4</F>
+      <D>S</D>
+      <T>2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 15:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 16:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>1</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 17:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 18:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 19:00:00</ftime>
+      <F>2</F>
+      <D>SSA</D>
+      <T>-1</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 20:00:00</ftime>
+      <F>1</F>
+      <D>SSA</D>
+      <T>-2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 21:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>-2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 22:00:00</ftime>
+      <F>3</F>
+      <D>SA</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-15 23:00:00</ftime>
+      <F>2</F>
+      <D>SSA</D>
+      <T>-1</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 00:00:00</ftime>
+      <F>2</F>
+      <D>SSV</D>
+      <T>-2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 01:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-3</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 02:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 03:00:00</ftime>
+      <F>2</F>
+      <D>SSA</D>
+      <T>-3</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 04:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 05:00:00</ftime>
+      <F>2</F>
+      <D>SSA</D>
+      <T>-2</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 06:00:00</ftime>
+      <F>3</F>
+      <D>SSA</D>
+      <T>0</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 07:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-2</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 08:00:00</ftime>
+      <F>1</F>
+      <D>SSA</D>
+      <T>-2</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 09:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 10:00:00</ftime>
+      <F>1</F>
+      <D>SSA</D>
+      <T>-2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 11:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>-2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 12:00:00</ftime>
+      <F>1</F>
+      <D>SSA</D>
+      <T>0</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 13:00:00</ftime>
+      <F>1</F>
+      <D>SA</D>
+      <T>0</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 14:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>2</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 15:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>2</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 16:00:00</ftime>
+      <F>1</F>
+      <D>SA</D>
+      <T>0</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 17:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>0</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 18:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 19:00:00</ftime>
+      <F>1</F>
+      <D>SA</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 20:00:00</ftime>
+      <F>2</F>
+      <D>SA</D>
+      <T>-2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 21:00:00</ftime>
+      <F>2</F>
+      <D>SSA</D>
+      <T>-2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 22:00:00</ftime>
+      <F>2</F>
+      <D>SSA</D>
+      <T>-3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-16 23:00:00</ftime>
+      <F>1</F>
+      <D>SSA</D>
+      <T>-3</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 00:00:00</ftime>
+      <F>0</F>
+      <D>Logn</D>
+      <T>-2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 01:00:00</ftime>
+      <F>1</F>
+      <D>SSV</D>
+      <T>-2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 02:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 03:00:00</ftime>
+      <F>0</F>
+      <D>Logn</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 04:00:00</ftime>
+      <F>1</F>
+      <D>SSV</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 05:00:00</ftime>
+      <F>1</F>
+      <D>SV</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 06:00:00</ftime>
+      <F>0</F>
+      <D>Logn</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 09:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-6</T>
+      <W>Heiðskírt</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 12:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-6</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 15:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-4</T>
+      <W>Léttskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 18:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-5</T>
+      <W>Skýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-17 21:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-11</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 00:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-12</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 03:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-8</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 06:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 09:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 12:00:00</ftime>
+      <F>1</F>
+      <D>SSV</D>
+      <T>-2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 15:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 18:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-18 21:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 00:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-5</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 03:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 06:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-7</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 09:00:00</ftime>
+      <F>3</F>
+      <D>SSV</D>
+      <T>-7</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 12:00:00</ftime>
+      <F>3</F>
+      <D>SSV</D>
+      <T>-6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 15:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>-6</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 18:00:00</ftime>
+      <F>2</F>
+      <D>S</D>
+      <T>-9</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-19 21:00:00</ftime>
+      <F>3</F>
+      <D>SSV</D>
+      <T>-10</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-20 00:00:00</ftime>
+      <F>3</F>
+      <D>S</D>
+      <T>-10</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-20 06:00:00</ftime>
+      <F>4</F>
+      <D>S</D>
+      <T>-7</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-20 12:00:00</ftime>
+      <F>4</F>
+      <D>S</D>
+      <T>-1</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-20 18:00:00</ftime>
+      <F>4</F>
+      <D>S</D>
+      <T>0</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-21 00:00:00</ftime>
+      <F>3</F>
+      <D>SA</D>
+      <T>2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-21 06:00:00</ftime>
+      <F>3</F>
+      <D>SSA</D>
+      <T>2</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-21 12:00:00</ftime>
+      <F>7</F>
+      <D>SSV</D>
+      <T>8</T>
+      <W>Lítils háttar rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-21 18:00:00</ftime>
+      <F>7</F>
+      <D>SV</D>
+      <T>6</T>
+      <W>Lítils háttar rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-22 00:00:00</ftime>
+      <F>7</F>
+      <D>SV</D>
+      <T>4</T>
+      <W>Lítils háttar rigning</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-22 06:00:00</ftime>
+      <F>6</F>
+      <D>VNV</D>
+      <T>0</T>
+      <W>Lítils háttar snjókoma</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-22 12:00:00</ftime>
+      <F>2</F>
+      <D>SV</D>
+      <T>-4</T>
+      <W>Alskýjað</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-22 18:00:00</ftime>
+      <F>1</F>
+      <D>SSA</D>
+      <T>-6</T>
+      <W>Lítils háttar snjókoma</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-23 00:00:00</ftime>
+      <F>1</F>
+      <D>S</D>
+      <T>-4</T>
+      <W>Lítils háttar snjókoma</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-23 06:00:00</ftime>
+      <F>6</F>
+      <D>NNV</D>
+      <T>-4</T>
+      <W>Lítils háttar snjókoma</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-23 12:00:00</ftime>
+      <F>9</F>
+      <D>NV</D>
+      <T>-4</T>
+      <W>Snjókoma</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-23 18:00:00</ftime>
+      <F>8</F>
+      <D>NV</D>
+      <T>-2</T>
+      <W>Snjókoma</W>
+    </forecast>
+    <forecast>
+      <ftime>2023-11-24 00:00:00</ftime>
+      <F>8</F>
+      <D>NV</D>
+      <T>-1</T>
+      <W>Snjókoma</W>
+    </forecast>
+  </station>
+</forecasts>	

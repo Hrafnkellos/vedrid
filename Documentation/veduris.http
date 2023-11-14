@@ -1,0 +1,10 @@
+
+
+### Basic request with reykjavik and akureyri 
+GET https://xmlweather.vedur.is?op_w=xml&type=forec&lang=is&view=xml&ids=1;422 HTTP/1.1
+
+### here we add params T D F
+GET https://xmlweather.vedur.is?op_w=xml&type=obs&lang=en&view=xml&ids=1;422&params=T;D;F HTTP/1.1
+
+### Here we just ids have 5 and 6
+GET https://xmlweather.vedur.is?op_w=xml&type=txt&lang=is&view=xml&ids=5;6 HTTP/1.1
