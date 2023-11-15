@@ -29,15 +29,15 @@ var app = builder.Build();
 app.Logger.LogInformation("vedrid app started");
 
 // Add swagger ui
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// if (app.Environment.IsDevelopment())
+// {
+app.UseSwagger();
+app.UseSwaggerUI();
+// }
 
 app.MapGet("/", () => Results.Redirect("/swagger")).ExcludeFromDescription();
 
-app.MapGet("/echo", (string echo) => echo).WithTags("System");
+app.MapGet("/echo/{echo}", (string echo) => echo).WithTags("System");
 
 app.MapGet("/healthcheck", (string echo) => echo).WithTags("System");
 

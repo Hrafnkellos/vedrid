@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  dotnet-app:
+    container_name: vedrid_api
+    build:
+      context: ./vedrid_api
+    ports:
+      - "5000:80"
+    networks:
+      - mynetwork
+
+  nextjs-app:
+    container_name: vedrid_app
+    build:
+      context: ./vedrid
+    ports:
+      - "3000:3000"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:

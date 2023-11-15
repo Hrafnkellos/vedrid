@@ -5,15 +5,15 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vedrid_api", "vedrid_api", "{FA600DDD-7BD5-4278-8D70-4FE7E07B075A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vedrid", "vedrid_api\Vedrid\Vedrid.csproj", "{24D7CF8F-9F04-4BBE-BD53-3C92A40FAD9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vedrid", "Vedrid\Vedrid.csproj", "{24D7CF8F-9F04-4BBE-BD53-3C92A40FAD9E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vedrid.Business", "vedrid_api\Vedrid.Business\Vedrid.Business.csproj", "{CC4135EA-B1EE-48CA-88A7-1EBBF4C417A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vedrid.Business", "Vedrid.Business\Vedrid.Business.csproj", "{CC4135EA-B1EE-48CA-88A7-1EBBF4C417A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vedrid.Resource", "vedrid_api\Vedrid.Resource\Vedrid.Resource.csproj", "{EA8F85CF-990E-4DA8-99D4-2340DB41DD24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vedrid.Resource", "Vedrid.Resource\Vedrid.Resource.csproj", "{EA8F85CF-990E-4DA8-99D4-2340DB41DD24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EB670F35-EFCB-4A4B-A373-2402E3E69F8B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vedrid.ResourceTests", "vedrid_api\Tests\Vedrid.ResourceTests\Vedrid.ResourceTests.csproj", "{A76F1EC6-8C93-4618-AE41-3B8DA6697891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vedrid.ResourceTests", "Tests\Vedrid.ResourceTests\Vedrid.ResourceTests.csproj", "{A76F1EC6-8C93-4618-AE41-3B8DA6697891}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
