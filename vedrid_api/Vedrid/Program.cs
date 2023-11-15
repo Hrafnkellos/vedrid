@@ -1,3 +1,4 @@
+using System.Net;
 using Vedrid;
 using Vedrid.Business;
 using Vedrid.Resource;
@@ -62,7 +63,8 @@ app.MapGet("/forecasts", async ([AsParameters] ForecastRequest forecastRequest, 
 
     return Results.Ok(results);
 })
-.WithTags("Forecasts");
+.WithTags("Forecasts")
+.Produces<WeatherForecastResponse>((int)HttpStatusCode.OK);
 
 app.MapGet("/forecastlocations", async (WeatherService weatherService, CancellationToken token) => 
 {
@@ -78,6 +80,8 @@ app.MapGet("/forecastlocations", async (WeatherService weatherService, Cancellat
 
     return Results.Ok(results);
 })
-.WithTags("Forecasts");
+.WithTags("Forecasts")
+.Produces<WeatherForecastResponse>((int)HttpStatusCode.OK);
+
 
 app.Run();
