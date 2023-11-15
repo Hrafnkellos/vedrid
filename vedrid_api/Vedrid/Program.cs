@@ -1,15 +1,33 @@
 using Vedrid;
+using Vedrid.Business;
+using Vedrid.Resource;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Requirements for swagger
 builder.Services.AddEndpointsApiExplorer();     
 builder.Services.AddSwaggerGen(x =>
 {
   x.EnableAnnotations();
 });
 
+// Configure JSON logging to the console.
+builder.Logging.AddJsonConsole();
+
+// add services to dependency Injection
+builder.Services.AddScoped<WeatherService>(); //Here I register my service and interface.
+
+// add Resources to dependency Injection
+builder.Services.AddScoped<IWeatherResource, VedurResource>();
+
+// TODO Read from appsettings.json
+builder.Services.AddHttpClient<IWeatherResource,VedurResource>(c => c.BaseAddress = new Uri("https://xmlweather.vedur.is"));
+
 var app = builder.Build();
 
+app.Logger.LogInformation("vedrid app started");
+
+// Add swagger ui
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -22,11 +40,44 @@ app.MapGet("/echo", (string echo) => echo).WithTags("System");
 
 app.MapGet("/healthcheck", (string echo) => echo).WithTags("System");
 
-app.MapGet("/forecasts", async ([AsParameters] ForecastRequest forecastRequest, CancellationToken token) => 
+app.MapGet("/forecasts", async ([AsParameters] ForecastRequest forecastRequest, WeatherService weatherService, CancellationToken token) => 
 {
-    return Results.Ok();
+    var results = await weatherService.GetWeatherAsync(forecastRequest.IdArray, forecastRequest.Language, forecastRequest.Time, token);
+
+    var response = new WeatherForecastResponse{ Locations = results.Select( x => 
+		new WeatherForecastLocationResponse
+		{ 
+			Id = x.Id, 
+			Name = x.Name,
+			Forecasts = x.Forecasts.Select( f => new ForecastResponse
+			{
+				Temperature = f.Temperature,
+				Time = f.Time,
+				WeatherDescription = f.WeatherDescription,
+				WindDirection = f.WindDirection,
+				Windspeed = f.Windspeed
+			})
+		}
+	)};
+
+    return Results.Ok(results);
 })
 .WithTags("Forecasts");
 
+app.MapGet("/forecastlocations", async (WeatherService weatherService, CancellationToken token) => 
+{
+    var results = await weatherService.GetWeatherLocationsAsync(token);
+
+	var response = new WeatherForecastResponse{ Locations = results.Select( x =>
+		new WeatherForecastLocationResponse
+		{ 
+			Id = x.Id, 
+			Name = x.Name
+		})
+	};
+
+    return Results.Ok(results);
+})
+.WithTags("Forecasts");
 
 app.Run();

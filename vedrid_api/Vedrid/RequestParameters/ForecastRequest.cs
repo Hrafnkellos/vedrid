@@ -12,7 +12,9 @@ public class ForecastRequest
     [FromQuery(Name = "ids")]
     public string? Ids { get; set; }
     [FromQuery(Name = "language")]
-    public string? Lang { get; set; }
+    public string? Language { get; set; }
     [FromQuery(Name = "time")]
     public DateTime? Time { get; set; }
+
+    public int[] IdArray => Ids?.Split(';').Select(int.Parse).ToArray() ?? Array.Empty<int>();
 }

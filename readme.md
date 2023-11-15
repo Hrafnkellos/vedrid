@@ -35,7 +35,7 @@ This app is only designed for the all green path and is not handling errors that
 * The boilerplate for the front end we get from next.js it's a fairly popular react scaffolding system. 
 https://nextjs.org/
 
-* We will use dotnet core as a backend to fetch data from vedur.is to pass data to the frontend.
+* We will use dotnet core minimal api as a backend to fetch data from vedur.is to pass data to the frontend.
 https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-7.0&tabs=visual-studio-code
 
 # vedur.is resource
@@ -119,6 +119,36 @@ Here we can filter all kinds of parameters we want returned to us. Not every par
 | TD | Daggarmark (°C) |
 | R | Uppsöfnuð úrkoma (mm / klst) úr sjálfvirkum mælum. |
 
+### Weather Description(W) values
+
+Mögulegar veðurlýsingar í veðurathugunum og veðurspám.  
+
+| Á íslensku | Á ensku |
+|--|--|
+| Heiðskírt | Clear sky |
+| Léttskýjað | Partly cloudy |
+| Skýjað | Cloudy |
+| Alskýjað | Overcast |
+| Lítils háttar | rigning Light rain |
+| Rigning | Rain |
+| Lítils háttar slydda | Light sleet |
+| Slydda | Sleet |
+| Lítils háttar snjókoma | Light snow |
+| Snjókoma | Snow |
+| Skúrir Rain | showers |
+| Slydduél | Sleet showers |
+| Snjóél | Snow showers |
+| Skýstrókar | Dust devil |
+| Moldrok | Dust storm |
+| Skafrenningur | Blowing snow |
+| Þoka | Fog |
+| Lítils háttar súld | Light drizzle |
+| Súld | Drizzle |
+| Frostrigning | Freezing rain |
+| Hagl | Hail |
+| Lítils háttar þrumuveður | Light thunder |
+| Þrumuveður | Thunder |
+
 
 # The Response 
 What data are we going to be displaying?
@@ -186,6 +216,7 @@ Vedrid API documentation
                         "temperature": 5,
                         "windSpeed": 9,
                         "windDirection": "East"
+                        "weatherDescription": "Cloudy"
                     },
                     ...
                 ]
@@ -208,3 +239,17 @@ C:\Program Files (x86)\Microsoft SDKs\Windows\{version}\bin\NETFX {version} Tool
 We first create an XSD definition: `c:\path> xsd ExampleResponse.xml`
 
 Then we create the class: `c:\path> xsd ExampleResponse.xsd /classes`
+
+## Parse xml string to object
+
+https://stackoverflow.com/a/19613953/1761867
+
+## Using dotnet http client
+
+https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory
+
+https://www.infoq.com/articles/creating-http-sdks-dotnet-6/?fbclid=IwAR3Vaz1fugpLYwt2Phep2GQs4AtSTZv28Mv8tGQzLr7BOULahXSufwdCfgY
+
+## Adding swagger to minimal api
+
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/openapi?view=aspnetcore-7.0

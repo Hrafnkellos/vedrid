@@ -27,4 +27,8 @@
     <ProjectReference Include="..\..\Vedrid.Business\Vedrid.Business.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
 </Project>
