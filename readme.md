@@ -3,6 +3,16 @@
 The app browses Icelandic weather data from https://www.vedur.is/um-vi/vefurinn/xml/
 This app is only designed for the all green path and is not handling errors that might come up.
 
+## Vedrid solution
+
+The project consists of 2 parts, a nextjs react web and a dotnet 7 minimal api.
+
+To launch the project with docker go to the root directory of the project and execute `docker compose up` that will launch the UI on http://localhost:3000 and the API on http://localhost:5000
+
+Some basic api operations can be seen in the following vs code rest client file:
+
+[veduris.http](Documentation/veduris.http)
+
 ## Project Milestones/Features
 
 ### A priority tasks
@@ -13,19 +23,20 @@ This app is only designed for the all green path and is not handling errors that
 * * [ ] External Resources
 * [X] Setup Project boilerplate + repository
 * * [x] editorconfig
-* * [x] gitignore
+* * [x] gitignore, dockerignore
 * * [x] swagger
-* * [ ] DockerFile
+* * [X] DockerFiles and compose
 * [X] Research integration endpoint and create a design
-* [ ] Implement Resource
-* [ ] Implement Service layer
+* [X] Implement Resource
+* [X] Implement Service layer
 * [ ] Implement Tests
-* [ ] Implement Console Interface
+* [x] Implement API Layer
+* [ ] Code cleanup/refactoring
 
 ### B priority tasks
-* [ ] Implement API Layer
-* [ ] Finish the react client so that is fetches from the api
-* [ ] Add sentry logging
+* [ ] Finish the react client so that is fetches data from the api
+* [ ] API sentry logging
+* [X] API Healthcheck
 * [ ] AWS Deployment
 * [ ] Github Actions build
 * [ ] Test Mini profiler. https://miniprofiler.com/

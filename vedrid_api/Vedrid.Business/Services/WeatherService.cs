@@ -18,6 +18,6 @@ public class WeatherService
 
     public async Task<IEnumerable<WeatherForecastLocation>> GetWeatherLocationsAsync(CancellationToken? cancellationToken) 
     {
-        return await this.weatherResource.GetWeatherLocationsAsync(cancellationToken);
+        return this.weatherResource.GetWeatherLocations();
     }
 }

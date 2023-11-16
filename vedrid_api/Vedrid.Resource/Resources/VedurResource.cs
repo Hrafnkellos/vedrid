@@ -16,11 +16,15 @@ public class VedurResource : IWeatherResource
         this.logger = logger;
     }
 
-    public async Task<IEnumerable<WeatherForecastLocation>> GetWeatherForecastsAsync(IEnumerable<int> ids, string? language, CancellationToken? cancellationToken = null)
+    public async Task<IEnumerable<WeatherForecastLocation>> GetWeatherForecastsAsync(IEnumerable<int>? ids, string? language, CancellationToken? cancellationToken = null)
     {
         // We have to think about errors here but there is not time to do that now
-        string rest = $"?op_w=xml&type=forec&lang=is&view=xml&ids=1;422";
-        rest = $"?op_w=xml&type=forec&lang={language}&view=xml&ids={string.Join(";", ids)}";
+        if (ids == null || !ids.Any())
+        {
+            ids = this.GetWeatherLocations().Select(x => x.Id);
+        }
+        
+        string rest = $"?op_w=xml&type=forec&lang={language}&view=xml&ids={string.Join(";", ids)}";
 
         try
         {
@@ -38,7 +42,7 @@ public class VedurResource : IWeatherResource
         }
     }
 
-    public async Task<IEnumerable<WeatherForecastLocation>> GetWeatherLocationsAsync(CancellationToken? cancellationToken = null)
+    public IEnumerable<WeatherForecastLocation> GetWeatherLocations()
     {
         // TODO add a chron scrapper that inserts ids into DB/cache. then fetch that data here.
         // So we just return mock data
@@ -51,4 +55,5 @@ public class VedurResource : IWeatherResource
             new() { Id = 5544, Name = "Höfn í Hornafirði" },
         };
     }
+
 }

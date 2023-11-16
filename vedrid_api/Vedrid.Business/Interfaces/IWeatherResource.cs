@@ -2,7 +2,7 @@
 
 public interface IWeatherResource
 {
-    public Task<IEnumerable<WeatherForecastLocation>> GetWeatherLocationsAsync(CancellationToken? cancellationToken = default);
+    public IEnumerable<WeatherForecastLocation> GetWeatherLocations();
 
     public Task<IEnumerable<WeatherForecastLocation>> GetWeatherForecastsAsync(IEnumerable<int> ids, string? language, CancellationToken? cancellationToken = default);
 }
