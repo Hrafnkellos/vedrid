@@ -9,7 +9,7 @@ The project consists of 2 parts, a nextjs react web and a dotnet 7 minimal api.
 
 To launch the project with docker go to the root directory of the project and execute `docker compose up` that will launch the UI on http://localhost:3000 and the API on http://localhost:5000
 
-Some basic api operations can be seen in the following vs code rest client file:
+Some basic api operations can be seen and interacted with in the following vs code rest client file once the containers are running:
 
 [veduris.http](Documentation/veduris.http)
 
@@ -53,7 +53,7 @@ https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetc
 
 To start i would like to say the [documentation from vedur.is](https://www.vedur.is/media/vedurstofan/XMLthjonusta.pdf) could be better. We can't get a list of ids from a web service call, we have to scrape or manually get ids from the website. But we will write some documentation here on what we discover about the resource and how we are going to use it.
 
-# The Request
+## The Request
 How are we going to get the data we want? We have a few options. We start with a basic request and then we want to add maybe 1 or 2 optional parameters to get different results from the service.
 
 Check out the http [vscode rest client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) file to test the endpoint yourself: [veduris.http](Documentation/veduris.http)
@@ -62,11 +62,11 @@ BasePath with required parameters:
 
 https://xmlweather.vedur.is?op_w=xml&type=forec&lang=is&view=xml&ids=1;422
 
-## Parameters
+### Parameters
 
-###  Ids - weather station ids
+####  Ids - weather station ids
 
-Parameter to add to path  `&ids=1;422;2642`
+*Parameter to add to path*  `&ids=1;422;2642`
 
 Source data: https://www.vedur.is/vedur/stodvar
 
@@ -80,15 +80,15 @@ Since we can cant get a list of ids we will just list a few popular places.
 | 571 | Egilsstaðir |
 | 5544 | Höfn í Hornafirði |
 
-### Lang
+#### Lang
 
-Parameter to add to path  `&lang=is`
+*Parameter to add to path*  `&lang=is`
 
 Language is ``is`` for icelandic or ``en`` english.
 
-### Type - forcast type
+#### Type - forcast type
 
-Parameter to add to path  `&type=forec`
+*Parameter to add to path*  `&type=forec`
 
 What type of forecast does the user want? we will only use forc. changing type we change the return object completely.
 
@@ -99,15 +99,15 @@ What type of forecast does the user want? we will only use forc. changing type w
 | txt | Textaspár og lýsingar |
 | forec-info | Upplýsingar um ve| ðurspálíkön |
 
-### Time (optional) - how many hours to predict
+#### Time (optional) - how many hours to predict
 
-Parameter to added to path `&time=1h`
+*Parameter to added to path* `&time=1h`
 
 Time between measurements is always in hours. For automatic measurements 1h is common. Fer manned posts its more likely to jump every 3h.
 
 Default value = **"1h"**
 
-### Params - what data to show   
+#### Params - what data to show   
 
 Here we can filter all kinds of parameters we want returned to us. Not every parameter is returned for every type.
 
@@ -130,7 +130,7 @@ Here we can filter all kinds of parameters we want returned to us. Not every par
 | TD | Daggarmark (°C) |
 | R | Uppsöfnuð úrkoma (mm / klst) úr sjálfvirkum mælum. |
 
-### Weather Description(W) values
+#### Weather Description(W) values
 
 Mögulegar veðurlýsingar í veðurathugunum og veðurspám.  
 
@@ -161,7 +161,7 @@ Mögulegar veðurlýsingar í veðurathugunum og veðurspám.
 | Þrumuveður | Thunder |
 
 
-# The Response 
+## The Response 
 What data are we going to be displaying?
 
 ``` XML
@@ -202,7 +202,7 @@ Vedrid API documentation
 
 `GET /forecasts?ids={ids:all}&time={time:1}&lang={lang:is}`
 
-    curl -i -H 'Accept: application/json' http://localhost:7000/forecasts
+    curl -i -H 'Accept: application/json' http://localhost:5000/forecasts
 
 ### Response 
 
@@ -236,6 +236,35 @@ Vedrid API documentation
         ]
     }
 
+## Get list of forecast locations
+
+### Request
+
+`GET /forecasts?ids={ids:all}&time={time:1}&lang={lang:is}`
+
+    curl -i -H 'Accept: application/json' http://localhost:5000/forecastlocations
+
+### Response 
+
+    HTTP/1.1 200 OK
+    Date: Thu, 24 Feb 2011 12:36:30 GMT
+    Status: 200 OK
+    Connection: close
+    Content-Type: application/json
+    Content-Length: 2
+
+    {
+        "locations": 
+        [
+            {
+                "id": 1,
+                "name": "Reykjavík"
+            },
+            ...
+        ]
+    }
+
+# Project build notes and references
 
 ## Generate class from XML
 
