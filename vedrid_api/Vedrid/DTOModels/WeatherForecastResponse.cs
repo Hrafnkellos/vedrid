@@ -1,8 +1,6 @@
-﻿using Vedrid.Business;
-
-namespace Vedrid;
+﻿namespace Vedrid;
 
 public record WeatherForecastResponse
 {
-    public IEnumerable<WeatherForecastLocationResponse> Locations { get; set; }
+    public IEnumerable<WeatherForecastLocation> Locations { get; set; }
 }

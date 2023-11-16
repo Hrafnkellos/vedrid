@@ -54,15 +54,18 @@ app.MapHealthChecks("/health").WithTags("System");
 
 app.MapGet("/forecasts", async ([AsParameters] ForecastRequest forecastRequest, WeatherService weatherService, CancellationToken token) => 
 {
+	// TODO Validate language and time values, mostly the language string, to defend against hacker shenanigans
+
 	var language = forecastRequest.Language ?? "is";
     var results = await weatherService.GetWeatherAsync(forecastRequest.IdArray, language, forecastRequest.Time, token);
 
     var response = new WeatherForecastResponse{ Locations = results.Select( x => 
-		new WeatherForecastLocationResponse
+		new Vedrid.WeatherForecastLocation
 		{ 
 			Id = x.Id, 
 			Name = x.Name,
-			Forecasts = x.Forecasts.Select( f => new ForecastResponse
+			FromTime = x.FromTime,
+			Forecasts = x.Forecasts?.Select( f => new Forecast
 			{
 				Temperature = f.Temperature,
 				Time = f.Time,
@@ -78,12 +81,12 @@ app.MapGet("/forecasts", async ([AsParameters] ForecastRequest forecastRequest, 
 .WithTags("Forecasts")
 .Produces<WeatherForecastResponse>((int)HttpStatusCode.OK);
 
-app.MapGet("/forecastlocations", async (WeatherService weatherService, CancellationToken token) => 
+app.MapGet("/weatherstations", async (WeatherService weatherService, CancellationToken token) => 
 {
     var results = await weatherService.GetWeatherLocationsAsync(token);
 
-	var response = new WeatherForecastResponse{ Locations = results.Select( x =>
-		new WeatherForecastLocationResponse
+	var response = new WeatherStationResponse{ WeatherStations = results.Select( x =>
+		new WeatherStation
 		{ 
 			Id = x.Id, 
 			Name = x.Name
@@ -93,7 +96,7 @@ app.MapGet("/forecastlocations", async (WeatherService weatherService, Cancellat
     return Results.Ok(results);
 })
 .WithTags("Forecasts")
-.Produces<WeatherForecastResponse>((int)HttpStatusCode.OK);
+.Produces<WeatherStationResponse>((int)HttpStatusCode.OK);
 
 
 app.Run();

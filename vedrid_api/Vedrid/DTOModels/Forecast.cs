@@ -1,6 +1,6 @@
 ﻿namespace Vedrid;
 
-public class ForecastResponse
+public class Forecast
 {
     public DateTime Time { get; set; }
     public int Temperature { get; set; }

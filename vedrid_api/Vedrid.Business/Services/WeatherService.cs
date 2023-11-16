@@ -11,9 +11,9 @@ public class WeatherService
         this.weatherResource = weatherResource;
     }
 
-    public async Task<IEnumerable<WeatherForecastLocation>> GetWeatherAsync(IEnumerable<int> ids, string language, DateTime? time, CancellationToken? cancellationToken) 
+    public async Task<IEnumerable<WeatherForecastLocation>> GetWeatherAsync(IEnumerable<int> ids, string language, int? time, CancellationToken? cancellationToken) 
     {
-        return await this.weatherResource.GetWeatherForecastsAsync(ids, language, cancellationToken);
+        return await this.weatherResource.GetWeatherForecastsAsync(ids, language, time, cancellationToken);
     }
 
     public async Task<IEnumerable<WeatherForecastLocation>> GetWeatherLocationsAsync(CancellationToken? cancellationToken) 

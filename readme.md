@@ -13,6 +13,15 @@ Some basic api operations can be seen and interacted with in the following vs co
 
 [veduris.http](Documentation/veduris.http)
 
+Its probably best to use the Swagger UI to test from http://localhost:5000
+
+## The Api Project
+
+The API is separated into 3 projects. API, Business And Resource layers. The API project is a dotnet minimal api project, it's more of a node/express like setup. Its handy when trying to do things fast but it can get a little messy compared to web API. But with a little work its probably possible to clean it up.
+
+We are using dependency Injection in solutions so its easy to unit and resource test. There is a basic resource test project. I did not add a unit test project because i don't have much business logic.
+
+
 ## Project Milestones/Features
 
 ### A priority tasks
@@ -20,7 +29,7 @@ Some basic api operations can be seen and interacted with in the following vs co
 * [X] Setup Documentation
 * * [ ] Configuration
 * * [ ] Project Structure
-* * [ ] External Resources
+* * [x] External Resources
 * [X] Setup Project boilerplate + repository
 * * [x] editorconfig
 * * [x] gitignore, dockerignore
@@ -29,7 +38,7 @@ Some basic api operations can be seen and interacted with in the following vs co
 * [X] Research integration endpoint and create a design
 * [X] Implement Resource
 * [X] Implement Service layer
-* [ ] Implement Tests
+* [x] Implement Tests
 * [x] Implement API Layer
 * [ ] Code cleanup/refactoring
 
@@ -236,13 +245,13 @@ Vedrid API documentation
         ]
     }
 
-## Get list of forecast locations
+## Get list of Weather stations
 
 ### Request
 
-`GET /forecasts?ids={ids:all}&time={time:1}&lang={lang:is}`
+`GET /weatherstations`
 
-    curl -i -H 'Accept: application/json' http://localhost:5000/forecastlocations
+    curl -i -H 'Accept: application/json' http://localhost:5000/weatherstations
 
 ### Response 
 
@@ -254,7 +263,7 @@ Vedrid API documentation
     Content-Length: 2
 
     {
-        "locations": 
+        "WeatherStations": 
         [
             {
                 "id": 1,

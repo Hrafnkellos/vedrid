@@ -15,6 +15,7 @@ public static class WeatherObjectExtensions
         {
             Id = Convert.ToInt32(forecastsStation.id),
             Name = forecastsStation.name,
+            FromTime = DateTime.Parse(forecastsStation.atime),
             Forecasts = forecastsStation.forecast.Select(f => f.ToWeatherForcastModel())
         };
     }

@@ -16,7 +16,7 @@ public class VedurResource : IWeatherResource
         this.logger = logger;
     }
 
-    public async Task<IEnumerable<WeatherForecastLocation>> GetWeatherForecastsAsync(IEnumerable<int>? ids, string? language, CancellationToken? cancellationToken = null)
+    public async Task<IEnumerable<WeatherForecastLocation>> GetWeatherForecastsAsync(IEnumerable<int> ids, string language, int? time = null, CancellationToken? cancellationToken = null)
     {
         // We have to think about errors here but there is not time to do that now
         if (ids == null || !ids.Any())
@@ -24,7 +24,13 @@ public class VedurResource : IWeatherResource
             ids = this.GetWeatherLocations().Select(x => x.Id);
         }
         
+        // we could document this query better and use some query builder
         string rest = $"?op_w=xml&type=forec&lang={language}&view=xml&ids={string.Join(";", ids)}";
+
+        if (time != null)
+        {
+            rest += $"&time={time}h";
+        }
 
         try
         {

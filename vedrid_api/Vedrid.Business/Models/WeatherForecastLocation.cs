@@ -11,6 +11,10 @@ public class WeatherForecastLocation
     /// </summary>
     public string Name { get; set; }
     /// <summary>
+    /// The initial time of forecast
+    /// </summary>
+    public DateTime FromTime { get; set; }
+    /// <summary>
     /// List of forecasts
     /// </summary>
     public IEnumerable<WeatherForecast>? Forecasts { get; set; }
