@@ -2,5 +2,5 @@ namespace Vedrid;
 
 public record WeatherStationResponse
 {
-    public IEnumerable<WeatherStation> WeatherStations { get; init; } = Enumerable.Empty<WeatherStation>();
+    public IEnumerable<WeatherStationBase>? WeatherStations { get; init; } = Enumerable.Empty<WeatherStation>();
 }

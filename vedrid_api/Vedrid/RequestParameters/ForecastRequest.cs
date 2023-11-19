@@ -17,8 +17,10 @@ public class ForecastRequest
     /// <summary>
     /// In what language should the Response be
     /// </summary>
+    // [FromQuery(Name = "language")]
+    // public string? Language { get; set; }
     [FromQuery(Name = "language")]
-    public string? Language { get; set; }
+    public Language? Language { get; set; }
     /// <summary>
     /// How much time between forecasts
     /// </summary>
@@ -26,4 +28,10 @@ public class ForecastRequest
     public int? Time { get; set; }
 
     public int[] IdArray => Ids?.Split(';').Select(int.Parse).ToArray() ?? Array.Empty<int>();
+}
+
+public enum Language 
+{
+    IS,
+    EN
 }

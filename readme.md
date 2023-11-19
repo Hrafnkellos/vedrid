@@ -38,12 +38,15 @@ We are using dependency Injection in solutions so its easy to unit and resource 
 * [X] Research integration endpoint and create a design
 * [X] Implement Resource
 * [X] Implement Service layer
-* [x] Implement Tests
+* [x] Implement Resource Tests
+* [x] Implement API Integration Tests
 * [x] Implement API Layer
 * [ ] Code cleanup/refactoring
 
 ### B priority tasks
 * [ ] Finish the react client so that is fetches data from the api
+* [ ] Research nextjs api layer
+* [ ] setup Serilog
 * [ ] API sentry logging
 * [X] API Healthcheck
 * [ ] AWS Deployment
@@ -209,7 +212,7 @@ Vedrid API documentation
 
 ### Request
 
-`GET /forecasts?ids={ids:all}&time={time:1}&lang={lang:is}`
+`GET /weather-forecasts?ids={ids:all}&time={time:1}&lang={lang:is}`
 
     curl -i -H 'Accept: application/json' http://localhost:5000/forecasts
 
@@ -223,7 +226,7 @@ Vedrid API documentation
     Content-Length: 2
 
     {
-        "locations": 
+        "stations": 
         [
             {
                 "id": 1,
@@ -249,7 +252,7 @@ Vedrid API documentation
 
 ### Request
 
-`GET /weatherstations`
+`GET /weather-stations`
 
     curl -i -H 'Accept: application/json' http://localhost:5000/weatherstations
 
@@ -302,3 +305,26 @@ https://www.infoq.com/articles/creating-http-sdks-dotnet-6/?fbclid=IwAR3Vaz1fugp
 ## Adding swagger to minimal api
 
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/openapi?view=aspnetcore-7.0
+
+## Adding healthchecks
+
+https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks#Health-Checks
+https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-8.0
+https://blog.devart.com/how-to-implement-health-checks-in-asp-net-6.html
+
+
+## Reusable integration testing
+
+https://timdeschryver.dev/blog/how-to-test-your-csharp-web-api#a-custom-and-reusable-xunit-fixture
+
+```bash
+dotnet add package Microsoft.AspNetCore.Mvc.Testing -v 7.0.14
+dotnet add package FluentAssertions -v 6.12.0
+```
+
+Vedrid.csproj
+```xml
+  <ItemGroup>
+    <InternalsVisibleTo Include="Vedrid.IntegrationTests" />
+  </ItemGroup>
+```

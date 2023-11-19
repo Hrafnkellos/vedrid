@@ -2,5 +2,5 @@
 
 public record WeatherForecastResponse
 {
-    public IEnumerable<WeatherForecastLocation> Locations { get; set; }
+    public IEnumerable<WeatherStation>? Stations { get; set; }
 }

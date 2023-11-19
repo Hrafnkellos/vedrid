@@ -16,11 +16,11 @@ public static class WeatherObjectExtensions
             Id = Convert.ToInt32(forecastsStation.id),
             Name = forecastsStation.name,
             FromTime = DateTime.Parse(forecastsStation.atime),
-            Forecasts = forecastsStation.forecast.Select(f => f.ToWeatherForcastModel())
+            Forecasts = forecastsStation.forecast.Select(f => f.ToWeatherForecastModel())
         };
     }
 
-    public static WeatherForecast ToWeatherForcastModel(this forecastsStationForecast forecast)
+    public static WeatherForecast ToWeatherForecastModel(this forecastsStationForecast forecast)
     {
         return new WeatherForecast
         {
@@ -28,7 +28,7 @@ public static class WeatherObjectExtensions
             Temperature = Convert.ToInt32(forecast.T),
             WeatherDescription = forecast.W,
             WindDirection = forecast.D,
-            Windspeed = Convert.ToInt32(forecast.F)
+            WindSpeed = Convert.ToInt32(forecast.F)
         };
     }
 }

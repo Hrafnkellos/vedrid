@@ -1,7 +1,7 @@
-namespace Vedrid;
+﻿namespace Vedrid;
 
-public record WeatherStation
+public record WeatherStation : WeatherStationBase
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
+    public DateTime FromTime { get; set; }
+    public IEnumerable<Forecast>? Forecasts { get; set; }
 }

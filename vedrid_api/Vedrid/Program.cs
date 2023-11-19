@@ -3,10 +3,12 @@ using System.Net;
 using Vedrid;
 using Vedrid.Business;
 using Vedrid.Resource;
+using HealthChecks.UI.Client;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var vedurisUri = "https://xmlweather.vedur.is";
+var vedurisUri = new Uri(builder.Configuration.GetConnectionString("veduris"));
 
 // Requirements for swagger
 builder.Services.AddEndpointsApiExplorer();     
@@ -19,7 +21,23 @@ builder.Services.AddSwaggerGen(x =>
 builder.Logging.AddJsonConsole();
 
 builder.Services.AddHealthChecks()
-	.AddUrlGroup(new Uri("https://xmlweather.vedur.is"));
+	.AddUrlGroup(vedurisUri, "www.vedur.is");
+
+
+builder.Services.AddHealthChecksUI(setupSettings: setup =>
+    {
+       setup.AddHealthCheckEndpoint("vedrid", "http://localhost:5400/healthcheck");
+    }).AddInMemoryStorage();
+
+// fix so that enums work in swagger
+builder.Services.ConfigureHttpJsonOptions(options =>
+{
+    options.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
+builder.Services.Configure<Microsoft.AspNetCore.Mvc.JsonOptions>(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
 
 // add services to dependency Injection
 builder.Services.AddScoped<WeatherService>(); //Here I register my service and interface.
@@ -27,8 +45,7 @@ builder.Services.AddScoped<WeatherService>(); //Here I register my service and i
 // add Resources to dependency Injection
 builder.Services.AddScoped<IWeatherResource, VedurResource>();
 
-// TODO Read from appsettings.json
-builder.Services.AddHttpClient<IWeatherResource,VedurResource>(c => c.BaseAddress = new Uri(vedurisUri));
+builder.Services.AddHttpClient<IWeatherResource,VedurResource>(c => c.BaseAddress = vedurisUri);
 
 var app = builder.Build();
 
@@ -50,53 +67,32 @@ app.MapGet("/healthdetails", () => {
 	});
 }).WithTags("System");
 
-app.MapHealthChecks("/health").WithTags("System");
-
-app.MapGet("/forecasts", async ([AsParameters] ForecastRequest forecastRequest, WeatherService weatherService, CancellationToken token) => 
+app.MapHealthChecks("/healthcheck", new()
 {
-	// TODO Validate language and time values, mostly the language string, to defend against hacker shenanigans
+    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+}).WithTags("System");
 
-	var language = forecastRequest.Language ?? "is";
-    var results = await weatherService.GetWeatherAsync(forecastRequest.IdArray, language, forecastRequest.Time, token);
+app.MapHealthChecksUI(options => options.UIPath = "/dashboard")
+.WithTags("System");
 
-    var response = new WeatherForecastResponse{ Locations = results.Select( x => 
-		new Vedrid.WeatherForecastLocation
-		{ 
-			Id = x.Id, 
-			Name = x.Name,
-			FromTime = x.FromTime,
-			Forecasts = x.Forecasts?.Select( f => new Forecast
-			{
-				Temperature = f.Temperature,
-				Time = f.Time,
-				WeatherDescription = f.WeatherDescription,
-				WindDirection = f.WindDirection,
-				Windspeed = f.Windspeed
-			})
-		}
-	)};
+app.MapGet("/weather-forecasts", async ([AsParameters] ForecastRequest forecastRequest, WeatherService weatherService, CancellationToken token) => 
+{
+	var language = forecastRequest.Language ?? Language.IS;
+	var languageString = language.ToString().ToLower();
+    var results = await weatherService.GetWeatherAsync(forecastRequest.IdArray, languageString, forecastRequest.Time, token);
 
-    return Results.Ok(results);
+    return Results.Ok(results.ToForecastResponseDTO());
 })
-.WithTags("Forecasts")
+.WithTags("Weather")
 .Produces<WeatherForecastResponse>((int)HttpStatusCode.OK);
 
-app.MapGet("/weatherstations", async (WeatherService weatherService, CancellationToken token) => 
+app.MapGet("/weather-stations", async (WeatherService weatherService, CancellationToken token) => 
 {
     var results = await weatherService.GetWeatherLocationsAsync(token);
 
-	var response = new WeatherStationResponse{ WeatherStations = results.Select( x =>
-		new WeatherStation
-		{ 
-			Id = x.Id, 
-			Name = x.Name
-		})
-	};
-
-    return Results.Ok(results);
+    return Results.Ok(results.ToStationResponseDTO());
 })
-.WithTags("Forecasts")
+.WithTags("Weather")
 .Produces<WeatherStationResponse>((int)HttpStatusCode.OK);
-
 
 app.Run();

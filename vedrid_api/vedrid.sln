@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EB670F35
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vedrid.ResourceTests", "Tests\Vedrid.ResourceTests\Vedrid.ResourceTests.csproj", "{A76F1EC6-8C93-4618-AE41-3B8DA6697891}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vedrid.IntegrationTests", "Tests\Vedrid.IntegrationTests\Vedrid.IntegrationTests.csproj", "{38CA0C19-204A-4DF5-A12D-DB4FB758BE24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{A76F1EC6-8C93-4618-AE41-3B8DA6697891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A76F1EC6-8C93-4618-AE41-3B8DA6697891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A76F1EC6-8C93-4618-AE41-3B8DA6697891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38CA0C19-204A-4DF5-A12D-DB4FB758BE24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CA0C19-204A-4DF5-A12D-DB4FB758BE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CA0C19-204A-4DF5-A12D-DB4FB758BE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CA0C19-204A-4DF5-A12D-DB4FB758BE24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{EA8F85CF-990E-4DA8-99D4-2340DB41DD24} = {FA600DDD-7BD5-4278-8D70-4FE7E07B075A}
 		{EB670F35-EFCB-4A4B-A373-2402E3E69F8B} = {FA600DDD-7BD5-4278-8D70-4FE7E07B075A}
 		{A76F1EC6-8C93-4618-AE41-3B8DA6697891} = {EB670F35-EFCB-4A4B-A373-2402E3E69F8B}
+		{38CA0C19-204A-4DF5-A12D-DB4FB758BE24} = {EB670F35-EFCB-4A4B-A373-2402E3E69F8B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1D97273C-2CDF-4D3E-9D00-DD7BF027596A}
