@@ -291,9 +291,9 @@ The 3 main projects splitt the code into API, Business and Resource layer.
 * The service layer handles all business logic need to perform on the data that the customer requests.
 * The Resource layer fetches and pushes data to external resources for the customer.
 
-The project depency graph looks like this. Its simple but very important.
+The project depency graph looks like this. Its simple but very important. So we dont get in trouble working with models and with dependency injection.
 
-![Documentation/Dependancy_graph.png](project dependancy)
+![project dependancy](Documentation/Dependancy_graph.drawio.png)
 
 Then there are 2 test project Implementation tests and Resource test.
 * Implementation test help us keep the API in a correct state and that it works as designed. There should be mock resources but i've not created mocks for now. Tests cannot run automatically without mock resources.
