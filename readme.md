@@ -293,7 +293,7 @@ The 3 main projects splitt the code into API, Business and Resource layer.
 
 The project depency graph looks like this. Its simple but very important.
 
-[[Documentation/Dependancy_graph.png|project dependancy]]
+![Documentation/Dependancy_graph.png](project dependancy)
 
 Then there are 2 test project Implementation tests and Resource test.
 * Implementation test help us keep the API in a correct state and that it works as designed. There should be mock resources but i've not created mocks for now. Tests cannot run automatically without mock resources.
