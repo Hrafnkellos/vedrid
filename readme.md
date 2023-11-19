@@ -27,8 +27,8 @@ We are using dependency Injection in solutions so its easy to unit and resource 
 ### A priority tasks
 
 * [X] Setup Documentation
-* * [ ] Configuration
-* * [ ] Project Structure
+* * [x] Configuration
+* * [x] Project Structure
 * * [x] External Resources
 * [X] Setup Project boilerplate + repository
 * * [x] editorconfig
@@ -46,11 +46,13 @@ We are using dependency Injection in solutions so its easy to unit and resource 
 ### B priority tasks
 * [ ] Finish the react client so that is fetches data from the api
 * [ ] Research nextjs api layer
-* [ ] setup Serilog
+* [ ] Setup Serilog
 * [ ] API sentry logging
 * [X] API Healthcheck
 * [ ] AWS Deployment
 * [ ] Github Actions build
+* [ ] Add database?
+* [ ] Scrape site for stations and store in DB
 * [ ] Test Mini profiler. https://miniprofiler.com/
 
 ## Tools
@@ -275,6 +277,28 @@ Vedrid API documentation
             ...
         ]
     }
+
+## Configuration
+
+The only configuration needed is the connection string for vedrid.is
+
+## Project structure
+
+We have 3 main projects and 2 test projects
+
+The 3 main projects splitt the code into API, Business and Resource layer.
+* Api layer implements the outwards facing api the customers consumer.
+* The service layer handles all business logic need to perform on the data that the customer requests.
+* The Resource layer fetches and pushes data to external resources for the customer.
+
+The project depency graph looks like this. Its simple but very important.
+
+[[Documentation/Dependancy_graph.png|project dependancy]]
+
+Then there are 2 test project Implementation tests and Resource test.
+* Implementation test help us keep the API in a correct state and that it works as designed. There should be mock resources but i've not created mocks for now. Tests cannot run automatically without mock resources.
+* Resource tests help us integrate with external resources and should not be run automatically.
+* Business/Unit tests are missing because there is no business logic.
 
 # Project build notes and references
 
