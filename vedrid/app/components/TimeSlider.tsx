@@ -3,7 +3,7 @@ import { Box, Grid, Slider, Typography } from '@mui/material'
 import React from 'react'
 
 function valuetext(value: number) {
-    return `${value}°C`;
+    return `${value}`;
 }
 
 export const TimeSlider = ({ maxValue, onChange } : { maxValue: number, onChange: (_:Event, v: number) => void }) => {
@@ -13,7 +13,7 @@ export const TimeSlider = ({ maxValue, onChange } : { maxValue: number, onChange
                 Time
             </Typography>
             <div>
-                <Grid container sx={{ minHeight: 50, minWidth: 1200 }}>
+                <Grid container sx={{ minHeight: 50, minWidth: 300, maxWidth: '100%' }}>
                     <Slider
                         aria-label="Temperature"
                         defaultValue={0}
