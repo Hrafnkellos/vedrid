@@ -18,5 +18,6 @@ public class WeatherIntegrationTests
         var api = new ApiWebApplicationFactory();
         var response = await api.CreateClient().GetAndDeserialize<WeatherStationResponse>("/weather-stations");
         response.WeatherStations.Should().HaveCount(5);
+        response.WeatherStations.Should().NotContain(x => x.Id == null);
     }
 }

@@ -1,21 +1,21 @@
 
 
-GET http://localhost:5000/swagger HTTP/1.1
+GET http://localhost:5400/swagger HTTP/1.1
 
 ### Health
-GET http://localhost:5000/health HTTP/1.1
+GET http://localhost:5400/health HTTP/1.1
 
 ### healthdetails
-GET http://localhost:5000/healthdetails HTTP/1.1
+GET http://localhost:5400/healthdetails HTTP/1.1
 
 ### common locations for forecasts
-GET http://localhost:5000/forecastlocations HTTP/1.1
+GET http://localhost:5400/weather-stations HTTP/1.1
 
 ### get forecast for all common locations
-GET http://localhost:5000/forecasts HTTP/1.1
+GET http://localhost:5400/weather-forecasts HTTP/1.1
 
 ### Get forecast only for Reykjavík 
-GET http://localhost:5000/forecasts?ids=1 HTTP/1.1
+GET http://localhost:5400/weather-forecasts?ids=1 HTTP/1.1
 
 ### Get forecast only for Reykjavík in english
-GET http://localhost:5000/forecasts?ids=1&language=en HTTP/1.1
+GET http://localhost:5400/weather-forecasts?ids=1&language=en HTTP/1.1
